@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--
+    Final Project
+    Author: Alex Florian
+    Date: May 2026
+    Filename: creative.html
+-->
+<html lang="en">
+<head>
+    <title>Creative Page | PowerHouse Gym</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>PowerHouse Gym</h1>
+        <p>Interactive fitness tools and gym features.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="creative.html" class="active">Creative Page</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section class="content-section">
+            <h2>Creative Fitness Zone</h2>
+            <p>
+                Get creative with your fitness journey! This page features interactive tools to make your workouts more fun and engaging. Try out our Rep Rush game to test your timing, generate random workouts for variety, and switch between light and dark mode for a personalized experience.
+            </p>
+        </section>
+
+        <section class="creative-grid">
+
+            <article class="feature-card game-card">
+                <h3>Rep Rush Game</h3>
+                <p>
+                    Press the spacebar when the blue needle reaches the red perfect rep zone.
+                    Each correct rep makes the game faster.
+                </p>
+
+                <div class="game-info">
+                    <p>Score: <span id="repScore">0</span></p>
+                    <p>High Score: <span id="repHighScore">0</span></p>
+                    <p>Speed: <span id="repSpeed">Beginner</span></p>
+                </div>
+
+                <div id="mobileGameMessage">
+                    Rep Rush is best played on a desktop or laptop with a keyboard.
+                </div>
+
+                <div id="repGameArea">
+                    <img src="images/bodybuilder-up.png" alt="Bodybuilder sprite" id="repPlayer">
+
+                    <div id="repCircle">
+                        <div id="perfectArc"></div>
+                        <div id="repNeedle"></div>
+                        <div id="repCircleCenter">SPACE</div>
+                    </div>
+                </div>
+
+                <button id="startRepGame">Start Game</button>
+
+                <div id="repMessage">
+                    Click Start Game, then press SPACE at the right time.
+                </div>
+            </article>
+
+            <article class="feature-card">
+                <h3>Workout of the Day Generator</h3>
+                <p>Click the button to receive a random workout.</p>
+
+                <button id="workoutButton">Generate Workout</button>
+
+                <div id="workoutResult">
+                    Your workout will appear here.
+                </div>
+            </article>
+
+            <article class="feature-card">
+                <h3>Light / Dark Mode</h3>
+                <p>Use this button to change the page theme.</p>
+
+                <button id="themeButton">Toggle Dark Mode</button>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 PowerHouse Gym | Built for Strength and Progress</p>
+    </footer>
+
+</body>
+</html>
